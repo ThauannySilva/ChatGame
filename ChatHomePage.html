@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Brain</title>
 
+    <link rel="stylesheet" href="css/sidebarStyle.css">
     <link rel="stylesheet" href="css/chatHomePageStyle.css">
 </head>
 <body class="dark">
@@ -35,7 +36,7 @@
             <div class="menu">
                 <ul>
                     <li class="nav-link">
-                        <a href="ChatHomePage.html">
+                        <a href="#">
                             <ion-icon name="chatbox-ellipses-outline" class="icon"></ion-icon>
                             <span class="text nav-text">Chat</span>
                         </a>
@@ -80,11 +81,39 @@
     </nav>
 
     <!--CHAT AREA-->
-    
+    <div class="container">
+        <div class="chat-box">
+            <div class="client">
+                <img src="images/thauanny-perfil.jpg" alt="logo">
+                <div class="client-info">
+                    <h2>Thauanny</h2>
+                    <p id="client-status">Online</p>
+                </div>
+            </div>
+
+            <div class="chats">
+            </div>
+
+            <div class="chat-input">
+                <div class="response-options">
+                    <input type="button" id="opcao2" class="btnop" value="" >
+                    <input type="button" id="opcao1" class="btnop" value="" >
+                    <input type="button" id="opcao3" class="btnop" value="" >
+                </div>
+            
+                <div class="input-container">
+                    <input type="text" id="input-text" placeholder="Enviar Mensagem" value=""  disabled>
+                    <button id="send-btn" class="send-btn" onclick="enviarMyMensagem()">
+                        <ion-icon name="send-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+    </div>
     <!-- ICONS AREA-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!--SCRIPTS-->
     <script src="js/chatHomePage.js"></script>
+    <script src="js/chatScript.js"></script>
 </body>
 </html>
