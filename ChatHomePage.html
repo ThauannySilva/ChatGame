@@ -13,9 +13,9 @@
 
     <link rel="stylesheet" href="css/chatHomePageStyle.css">
 </head>
-<body>
+<body class="dark">
     <!--SIDEBAR AREA-->
-    <nav class="sidebar">
+    <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
@@ -57,7 +57,7 @@
 
             <div class="bottom-content">
                 <li class="">
-                    <a href="#">
+                    <a href="IndexGame.html">
                         <ion-icon name="log-out-outline" class="icon"></ion-icon>
                         <span class="text nav-text"> Logout</span>
                     </a>
@@ -69,7 +69,7 @@
                         <ion-icon name="sunny-outline" class="icon sunP"></ion-icon>
                     </div>
 
-                    <span class="mode-text text">Dark Mode</span>
+                    <span class="mode-text text">Mode</span>
     
                     <div class="toggle-switch">
                         <span class="switch"></span>
@@ -78,8 +78,13 @@
             </div>
         </div>
     </nav>
+
+    <!--CHAT AREA-->
+    
     <!-- ICONS AREA-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--SCRIPTS-->
+    <script src="js/chatHomePage.js"></script>
 </body>
 </html>
